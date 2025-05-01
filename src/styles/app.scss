@@ -32,7 +32,16 @@ p{
     padding-top: 15px;
     padding-left: 25px;
 }
-
+header{
+    position: fixed;
+    width: 100%;
+}
+main {
+  position: relative;
+  z-index: 1;
+  padding-top: 100vh;
+  background: transparent; // ou pas de background du tout
+}
 .img--header{
     width: 100%;
     margin: 0;
@@ -128,7 +137,7 @@ footer{
     background: linear-gradient(0.25turn, #567452, #7fb12e);
     height: 320px;
     margin-top: 25px;
-    clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
 }
 
 .footer__liste{
@@ -310,7 +319,9 @@ p{
         grid-column: 4/-1;  
         font-size: 20px;
     }
-    
+    footer{
+        clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+    }
     .footer__liste{
         grid-row: 2/-1;
     }
