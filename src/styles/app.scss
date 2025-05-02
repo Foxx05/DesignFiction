@@ -1,5 +1,10 @@
 @import 'utils/variables';
 @import 'components/type';
+html{
+    overflow-x: hidden;
+}
+
+
 
 body{
     padding: 0;
@@ -118,8 +123,10 @@ p{
     color: #f4b942;
 }
 
-.img--full{
+.img--full {
     width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    position: relative;
 }
 
 /* footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer*/
@@ -144,7 +151,14 @@ footer{
     margin-bottom: 16px;
     color: #fafafa;
 }
+img{
+    grid-column: 1/-1;
+    width: 100%;
+}
 
+.img--sent{
+    margin-top: 20px;
+}
 .backToTop {
     grid-column: 5/-1;
     bottom: 20px;
@@ -267,8 +281,8 @@ p{
 
     main {
         max-width: 1250px;
-        margin: 0;
-        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
     .img--header{
         height: 100%;
