@@ -3,7 +3,12 @@
 html{
     overflow-x: hidden;
 }
-
+section{
+    margin-bottom: 73px;
+}
+.font0{
+    font-size: 0;
+}
 body{
     padding: 0;
     margin: 0;
@@ -122,8 +127,9 @@ p{
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     position: relative;
-    margin-top: 73px;
-    margin-bottom: 73px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0;
 }
 
 /* footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer*/
@@ -182,7 +188,7 @@ img{
 .backToTop svg {
     width: 24px;
     height: 24px;
-    fill: white;
+    fill: #fafafa;
 }
 .img--heaj{
     grid-column: 1/3;
