@@ -3,12 +3,28 @@
 html{
     overflow-x: hidden;
 }
+.main{
+    margin: 0;
+}
 section{
     margin-bottom: 73px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
-.font0{
+
+.section--header{
+    margin: 0;
+    padding: 0;
+}
+.section--full{
     font-size: 0;
 }
+
+.section--full ~ .section {
+  background-color: #3a3a3a;
+  width: 100%;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -211,15 +227,18 @@ img{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, auto);
     column-gap: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+
 }
 
 @media (min-width: 580px) {
 
+.section--header{
+    margin: 0;
+    padding: 0;
+}
 .gridcol {
     padding-left: 80px;
-    padding-right: 96px;
+    padding-right: 80px;
 }
 
 }
@@ -228,6 +247,8 @@ img{
 
 body{
     font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 p{
@@ -236,16 +257,20 @@ p{
 }
 
 .section{
-    margin-bottom: 148px;
+    margin-bottom: 78px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
+.section--header{
+    margin: 0;
+    padding: 0;
+}
+
 .img--nav{
     width: 10%;
     margin-bottom: 10px;
 }
 
-.section{
-    margin-bottom: 78px;
-}
 
 .footer__liste{
     grid-column: 3/-2;
@@ -274,18 +299,23 @@ p{
 .gridcol {
     grid-template-columns: repeat(7, 1fr);
     column-gap: 20px;
-    padding-left: 120px;
-    padding-right: 120px;
 }
 
 }
 
 @media (min-width: 1250px) {
-
+    
     main {
         max-width: 1250px;
         margin: 0 auto;
         box-sizing: border-box;
+    }
+    .section{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .section--header{
+        padding: 0;
     }
     .img--header{
         height: 100%;
@@ -380,8 +410,6 @@ p{
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(10, auto);
         column-gap: 20px;
-        padding-left: 60px;
-        padding-right: 60px;
     }
 }
 
