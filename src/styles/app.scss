@@ -342,7 +342,14 @@ p{
     
     .p--col1col5{
         grid-column: 1/5;
-
+        background-color: #121212;
+        z-index: 1;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    .p--col1col5__capt{
+        grid-row: 2/3;
+        grid-column: 1/5;
         background-color: #121212;
         z-index: 1;
         padding-right: 10px;
